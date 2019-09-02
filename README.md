@@ -1,6 +1,6 @@
 # Salesforce Commerce Cloud Cordova App
 
-This project will serve as a local NodeJS based Proxy server that will forward requests to an Salesforce Commerce Cloud OCAPI instance. This can be used for purposes such as testing 3rd party apps using OCAPI as well as integration for mobile/browser apps. The configuration of site_id, client_id etc... are configured at the Proxy level rather than in the app directly. Coresponding Mobile App: {future link}
+This project will act as a quick UI to be used in a Cordova/PhoneGap Application for a quick mobile building. The core is the ocapi functionality that designed to work with [**OCAPI-Proxy**](https://github.com/johnfacey/ocapi-proxy)
 
 ## Getting Started
 
