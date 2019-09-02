@@ -1,14 +1,27 @@
 {
-    "name": "org.apache.cordova.sfcc",
-    "displayName": "sfcc",
+    "name": "sfcc-cordova-ocapi",
+    "displayName": "Salesforce Cordova OCAPI Sample App",
     "version": "1.0.0",
-    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "description": "A sample Cordova with an JS OCAPI Interface.",
     "main": "index.js",
+    "keywords": [
+        "sfcc",
+        "salesforce",
+        "ocapi",
+        "express",
+        "demandware",
+        "open",
+        "commerce",
+        "commerce cloud",
+        "open commerce",
+        "node",
+        "proxy"
+      ],
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Apache Cordova Team",
-    "license": "Apache-2.0",
+    "license": "MIT",
+    "author": "John Facey II",
     "dependencies": {
         "cordova-android": "7.1.4",
         "cordova-plugin-whitelist": "^1.3.3"
