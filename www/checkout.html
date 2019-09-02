@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>SFCC - PhoneGap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1 user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="HandheldFriendly" content="True">
+
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.transitions.css">
+	<link rel="stylesheet" href="css/fakeLoader.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="shortcut icon" href="img/favicon.png">
+
+</head>
+
+<body>
+
+	<!-- navbar top -->
+	<div class="navbar-top">
+		<div class="side-nav-panel-left">
+			<a href="#" data-activates="slide-out-left" class="side-nav-left"><i class="fa fa-bars"></i></a>
+		</div>
+		<!-- site brand	 -->
+		<div class="site-brand">
+			<a href="index.html">
+				<h1>SFCC Cordova</h1>
+			</a>
+		</div>
+		<!-- end site brand	 -->
+		<div class="side-nav-panel-right">
+			<a href="cart.html" class="side-nav-right"><i class="fa fa-shopping-basket"></i><span id="mini-cart-count" style="display:none">0</span></a>
+		</div>
+	</div>
+	<!-- end navbar top -->
+
+	<!-- loader -->
+	<div id="fakeLoader"></div>
+	<!-- end loader -->
+
+	<!-- side nav left-->
+	<div class="side-nav-panel-left">
+		<ul id="slide-out-left" class="side-nav side-nav-panel collapsible">
+			<li class="profil">
+				<img src="img/profile.jpg" alt="">
+				<h2 id="customer_name">{customer_name}</h2>
+				<h6 id="email">{email}</h6>
+			</li>
+			<li class="li-top"><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="product.html"><i class="fa fa-shopping-basket"></i>Product List</a></li>
+			<li><a href="shop-single.html"><i class="fa fa-list-alt"></i>Product Details</a></li>
+			<li><a href="cart.html"><i class="fa fa-shopping-cart"></i>Shopping Cart</a></li>
+			<li><a href="checkout.html"><i class="fa fa-send"></i>Checkout</a></li>
+			<li><a href="blog.html"><i class="fa fa-bold"></i>Blog</a></li>
+			<li><a href="error404.html"><i class="fa fa-hourglass-half"></i>404</a></li>
+			<li><a href="testimonial.html"><i class="fa fa-support"></i>Testimonial</a></li>
+			<li><a href="about-us.html"><i class="fa fa-user"></i>About Us</a></li>
+			<li><a href="contact.html"><i class="fa fa-envelope-o"></i>Contact Us</a></li>
+			<li><a href="login.html"><i class="fa fa-sign-in"></i>Login</a></li>
+			<li><a href="register.html"><i class="fa fa-user-plus"></i>Register</a></li>
+		</ul>
+	</div>
+	<!-- end side nav left-->
+
+	<!-- checkout -->
+	<div class="checkout pages section">
+		<div class="container">
+			<div class="pages-head">
+				<h3>CHECKOUT</h3>
+			</div>
+			<div class="checkout-content">
+				<div class="row">
+					<div class="col s12">
+						<ul class="collapsible" data-collapsible="accordion">
+							<li>
+								<div class="collapsible-header active" id="step1">
+									<h5>1 - Checkout Method</h5>
+								</div>
+								<div class="collapsible-body">
+									<h6>Checkout as a Guest or Register</h6>
+									<form action="#" class="checkout-radio">
+										<p>
+											<input type="radio" class="with-gap" id="guest-checkout" name="group1">
+											<label for="guest-checkout"><span>Guest Checkout</span></label>
+										</p>
+										<p>
+											<input type="radio" class="with-gap" id="register" name="group1">
+											<label for="register"><span>Register</span></label>
+										</p>
+									</form>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sunt</p>
+									<a href="" class="button-default">CONTINUE</a>
+									<div class="checkout-login">
+										<div class="row">
+											<form class="col s12">
+												<h6>Login</h6>
+												<p>Lorem ipsum dolor sit amet.</p>
+												<div class="input-field">
+													<h5>Username/Email</h5>
+													<input id="username" type="text" class="validate" required>
+												</div>
+												<div class="input-field">
+													<h5>Password</h5>
+													<input id="password" type="password" class="validate" required>
+												</div>
+												<a href="">
+													<h6>Forgot Password ?</h6>
+												</a>
+												<a href="" class="button-default">LOGIN</a>
+											</form>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header" id="step2">
+									<h5>2 - Billing Information</h5>
+								</div>
+								<div class="collapsible-body">
+									<div class="billing-information">
+										<form action="#" id="billing_form" name="billing_form">
+											<div class="input-field">
+												<h5>Name*</h5>
+												<input id="billing_name" type="text" class="validate" required>
+											</div>
+											<div class="input-field">
+												<h5>Email*</h5>
+												<input id="billing_email" type="email" class="validate" required>
+											</div>
+											<div class="input-field">
+												<h5>Company Name</h5>
+												<input id="billing_company" type="text" class="validate">
+											</div>
+											<div class="input-field">
+												<h5>Address*</h5>
+												<input id="billing_address" type="text" class="validate" required>
+											</div>
+											<div class="input-field">
+												<h5>Town/City*</h5>
+												<input id="billing_city" type="text" class="validate" required>
+											</div>
+											<div class="input-field">
+												<h5>State/Country*</h5>
+												<input id="billing_state" type="text" class="validate" required>
+											</div>
+											<div class="input-field">
+												<h5>Portalcode/ZIP*</h5>
+												<input id="billing_zip" type="number" class="validate" required>
+											</div>
+											<div class="input-field">
+												<h5>Phone*</h5>
+												<input id="billing_phone" type="number" required>
+											</div>
+											<a href="#" onClick="jQuery('#step3').click()" class="button-default">CONTINUE</a>
+										</form>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header" id="step3">
+									<h5>3 - Shipping Information</h5>
+								</div>
+								<div class="collapsible-body">
+									<div class="shipping-information">
+										<form action="#" id="shipping_form" name="shipping_form">
+											<div class="input-field">
+												<h5>Name*</h5>
+												<input id="shipping_name" type="text" class="validate" required>
+											</div>
+											<div class="input-field">
+												<h5>Email*</h5>
+												<input id="shipping_email" type="email" class="validate" required>
+											</div>
+											<div class="input-field">
+												<h5>Company Name</h5>
+												<input id="shipping_company" type="text" class="validate">
+											</div>
+											<div class="input-field">
+												<h5>Address*</h5>
+												<input id="shipping_address" type="text" class="validate" required>
+											</div>
+											<div class="input-field">
+												<h5>Town/City*</h5>
+												<input id="shipping_city" type="text" class="validate" required>
+											</div>
+											<div class="input-field">
+												<h5>State/Country*</h5>
+												<input id="shipping_state" type="text" class="validate" required>
+											</div>
+											<div class="input-field">
+												<h5>Portalcode/ZIP*</h5>
+												<input id="shipping_zip" type="number" class="validate" required>
+											</div>
+											<div class="input-field">
+												<h5>Phone*</h5>
+												<input id="shipping_phone" type="number" required>
+											</div>
+											<a href="#" onClick="jQuery('#step4').click()" class="button-default">CONTINUE</a>
+										</form>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header" id="step4">
+									<h5>4 - Payment Mode</h5>
+								</div>
+								<div class="collapsible-body">
+									<div class="payment-mode">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur provident repellat</p>
+										<form action="#" class="checkout-radio" id="payment_form">
+											<div class="input-field">
+												<h5>Card Number</h5>
+												<input id="card_num" class="validate" required>
+											</div>
+
+											<div class="input-field">
+												<h5>Expiry Month*</h5>
+												<input id="exp_month" type="number" class="validate" required>
+											</div>
+
+											<div class="input-field">
+												<h5>Expiry Year*</h5>
+												<input id="exp_year" type="number" class="validate" required>
+											</div>
+
+											<div class="input-field">
+												<h5>CVV</h5>
+												<input id="card_cvv" type="number" class="validate" required>
+											</div>
+
+
+											<button class="button-default" href="#" onClick="jQuery('#step5').click()">Continue</button>
+										</form>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header" id="step5">
+									<h5>5 - Order Review</h5>
+								</div>
+								<div class="collapsible-body">
+									<div class="order-review cart-details-checkout" id="cart-content-product">
+										<div class="row">
+											<div class="col s12">
+												<div class="cart-details">
+													<div class="row">
+														<div class="col s5">
+															<div class="cart-product">
+																<h5>Image</h5>
+															</div>
+														</div>
+														<div class="col s7">
+															<div class="cart-product">
+																<img src="img/shop1.png" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="cart-details">
+													<div class="row">
+														<div class="col s5">
+															<div class="cart-product">
+																<h5>Name</h5>
+															</div>
+														</div>
+														<div class="col s7">
+															<div class="cart-product">
+																<a href="">Jackets Men's</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="cart-details">
+													<div class="row">
+														<div class="col s5">
+															<div class="cart-product">
+																<h5>Quantity</h5>
+															</div>
+														</div>
+														<div class="col s7">
+															<div class="cart-product">
+																<input type="text" value="1">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="cart-details">
+													<div class="row">
+														<div class="col s5">
+															<div class="cart-product">
+																<h5>Unit Price</h5>
+															</div>
+														</div>
+														<div class="col s7">
+															<div class="cart-product">
+																<span>$26.00</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="cart-details">
+													<div class="row">
+														<div class="col s5">
+															<div class="cart-product">
+																<h5>Total Price</h5>
+															</div>
+														</div>
+														<div class="col s7">
+															<div class="cart-product">
+																<span>$26.00</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="order-review final-price cart-details-checkout">
+										<div class="row">
+											<div class="col s12">
+												<div class="cart-details">
+													<div class="col s8">
+														<div class="cart-product">
+															<h5>Sub Total</h5>
+														</div>
+													</div>
+													<div class="col s4">
+														<div class="cart-product">
+															<span id="product_sub_total">$26.00</span>
+														</div>
+													</div>
+												</div>
+												<div class="cart-details">
+													<div class="col s8">
+														<div class="cart-product">
+															<h5>Flat Shipping Rate:</h5>
+														</div>
+													</div>
+													<div class="col s4">
+														<div class="cart-product">
+															<span>$5.00</span>
+														</div>
+													</div>
+												</div>
+												<div class="cart-details">
+													<div class="col s8">
+														<div class="cart-product">
+															<h5>Total</h5>
+														</div>
+													</div>
+													<div class="col s4">
+														<div class="cart-product">
+															<span>$31.00</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<a href="#" onClick="OCAPI.checkout(settings);" class="button-default button-fullwidth">CONTINUE</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end checkout -->
+
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="about-us-foot">
+				<h6>SFCC PhoneGap</h6>
+				<p>is a lorem ipsum dolor sit amet, consectetur adipisicing elit consectetur adipisicing elit.</p>
+			</div>
+			<div class="social-media">
+				<a href=""><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fa fa-twitter"></i></a>
+				<a href=""><i class="fa fa-google"></i></a>
+				<a href=""><i class="fa fa-linkedin"></i></a>
+				<a href=""><i class="fa fa-instagram"></i></a>
+			</div>
+			<div class="copyright">
+				<span>© 2018 All Right Reserved</span>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+
+	<!-- scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/fakeLoader.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/ocapi.js"></script>
+	<script>
+		$(document).ready(function () {
+			customer = Util.loadSettings();
+			OCAPI.viewCart(settings);
+			OCAPI.preCheckCheckout();
+		})
+	</script>
+</body>
+
+</html>

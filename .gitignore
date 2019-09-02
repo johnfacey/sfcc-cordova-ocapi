@@ -1,0 +1,7 @@
+config.json
+node_modules
+plugins
+platforms
+.vscode
+logs
+local.json
